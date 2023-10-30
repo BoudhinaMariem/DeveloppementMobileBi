@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE2E5"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="459dp"
+        android:layout_height="898dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="471dp"
+                    android:layout_height="284dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/top_background" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="135dp"
+                    android:layout_height="96dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.39"
+                    app:srcCompat="@drawable/logo_esb1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/prenom"
+                        android:layout_width="161dp"
+                        android:layout_height="48dp"
+                        android:layout_margin="5sp"
+                        android:background="@drawable/inputstyle"
+                        android:hint="    Prénom"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/nom"
+                        android:layout_width="169dp"
+                        android:layout_height="48dp"
+                        android:layout_margin="5sp"
+                        android:background="@drawable/inputstyle"
+                        android:hint="    Nom"
+                        android:inputType="textPersonName" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/inputstyle"
+                    android:hint="    Email"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/inputstyle"
+                    android:ems="10"
+                    android:hint="    choisissez un mot de passe"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/naissance"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/inputstyle"
+                    android:hint="s"
+                    android:inputType="date"
+                    android:textColor="@color/material_on_background_disabled"
+                    tools:ignore="TouchTargetSizeCheck"
+                    tools:text="    entrer votre date de naissance" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="467dp"
+                    android:layout_height="83dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/radiosexe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="63dp"
+                        android:baselineAligned="false">
+
+                        <RadioButton
+                            android:id="@+id/radiosex2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Homme"
+                            tools:layout_conversion_absoluteHeight="48dp"
+                            tools:layout_conversion_absoluteWidth="107dp"
+                            tools:layout_editor_absoluteX="129dp"
+                            tools:layout_editor_absoluteY="491dp" />
+
+                    </RadioGroup>
+
+                    <RadioButton
+                        android:id="@+id/radiosex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:text="Femme" />
+
+                    <RadioButton
+                        android:id="@+id/radiosex3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Personnalité"
+                        tools:layout_conversion_absoluteHeight="48dp"
+                        tools:layout_conversion_absoluteWidth="152dp"
+                        tools:layout_editor_absoluteX="236dp"
+                        tools:layout_editor_absoluteY="491dp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/commentaire"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="5sp"
+                    android:height="200dp"
+                    android:background="@drawable/inputstyle"
+                    android:gravity="top"
+                    android:hint="    Commentaire"
+                    android:inputType="textMultiLine" />
+
+                <CheckBox
+                    android:id="@+id/acceptation_conditions"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:text="Accepter les conditions d'utilisation" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/txterroruser"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/envoyer"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#DF8D8D"
+                    android:insetLeft="60dp"
+                    android:insetRight="10dp"
+                    android:onClick="handleOk"
+                    android:text="Confirmer"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
